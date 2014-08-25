@@ -4,7 +4,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3', :groups => [:development, :test]
+# gem 'pg', '~> 0.17.1', :group => :production
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -38,3 +40,19 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+group :development, :test do
+  gem 'sqlite3'
+  gem 'rspec-rails', '~> 3.0.2'
+end
+
+gem 'faker', '0.3.1', :group => :development
+
+group :test do
+  gem 'webrat', '0.7.1'
+  gem 'factory_girl_rails'
+  gem 'turn'
+end
+
+group :production do
+  gem 'pg', '~> 0.17.1'
+end
