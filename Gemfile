@@ -43,6 +43,7 @@ gem 'spring',        group: :development
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.0.2'
+  gem 'cucumber'
 end
 
 gem 'faker', '0.3.1', :group => :development
