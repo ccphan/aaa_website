@@ -7,6 +7,9 @@ gem 'rails', '4.1.5'
 # gem 'sqlite3', :groups => [:development, :test]
 # gem 'pg', '~> 0.17.1', :group => :production
 
+# Use Devise for authentication
+gem 'devise'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
