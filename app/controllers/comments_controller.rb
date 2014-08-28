@@ -4,7 +4,8 @@ class CommentsController < ApplicationController
   # GET /comments
   # GET /comments.json
   def index
-    @comments = Comment.all
+    @comments = Comment.where(event_id: params[:event_id])
+    @event = Event.find(params[:event_id])
   end
 
   # GET /comments/1
@@ -14,7 +15,7 @@ class CommentsController < ApplicationController
 
   # GET /comments/new
   def new
-    @comment = Comment.new
+    @comment = Comment.new(event_id: params[:event_id])
   end
 
   # GET /comments/1/edit
