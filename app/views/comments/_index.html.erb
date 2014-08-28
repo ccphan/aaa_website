@@ -1,4 +1,4 @@
-<h1>Listing comments for <%= @event.title %></h1>
+<h1>Listing comments for <%= event.title %></h1>
 
 <table>
   <thead>
@@ -11,7 +11,7 @@
   </thead>
 
   <tbody>
-    <% @comments.each do |comment| %>
+    <% comments.each do |comment| %>
       <tr>
         <td><%= comment.event_id %></td>
         <td><%= comment.details %></td>
