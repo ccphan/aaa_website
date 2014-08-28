@@ -5,4 +5,6 @@ class Event < ActiveRecord::Base
 	# => validates_numericality_of (can specify :equal_to; :greater_than, :less_than; ...)
 	# => validates_with (enables you to use your own customised validator)
 	# => many more...
+
+	has_many :comments, :dependent => :destroy
 end
