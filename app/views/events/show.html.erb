@@ -17,5 +17,6 @@
 </p>
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
+<% # the :event_id => {@event} is then read by the comments#index by a ref params[:event_id]%>
 <%= link_to 'List Comments', comments_path(event_id: @event) %> |
 <%= link_to 'Back', events_path %>
