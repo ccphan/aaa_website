@@ -1,8 +1,22 @@
-/*  layout.css
+/*  layout.scss
 *   
-*  Basic styling for the static page
-*
 */
+
+@import "site-branding";
+
+body {
+    font-family: $body-font;
+}
+
+h1, h2 {
+    color: $near-black;
+    font-family: $heading-font;
+}
+
+h3 {
+    color: $dark-green;
+    font: italic bold 20px $accent-font;
+}
 
 div#container {
     display: block;
@@ -11,13 +25,13 @@ div#container {
     width: 1000px;
     margin: 0 auto;
     padding: 0;
-    background-color: #808000;
+    background-color: $khaki;
 }
 
 header#page_header {
-    background-color: #008000;
+    background-color: $mid-green;
     text-align: center;
-    color: #FFFFFF;
+    color: $white;
     padding: 10px, 15px;
 
 }
