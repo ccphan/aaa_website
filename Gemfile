@@ -9,6 +9,8 @@ gem 'rails', '4.1.5'
 
 # Use Devise for authentication
 gem 'devise'
+gem 'activeadmin', github: 'gregbell/active_admin'
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
