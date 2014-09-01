@@ -20,7 +20,9 @@
 
   <% if signed_in? %>
     <section>
-      <%= link_to 'New Event', new_event_path %>
+      <%= link_to 'New Event', new_event_path %> |
+      <%= link_to "XML representation of events list", events_path(@events, format: 'xml') %> |
+      <%= link_to "JSON representation of events list", events_path(@events, format: 'json') %>
     </section>
   <% end %>
 
