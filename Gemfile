@@ -11,6 +11,11 @@ gem 'rails', '4.1.5'
 gem 'devise'
 gem 'activeadmin', github: 'gregbell/active_admin'
 
+# image uploader and processor gems
+gem 'carrierwave'
+gem 'rmagick', :require => 'RMagick'
+
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
